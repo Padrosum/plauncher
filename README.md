@@ -63,7 +63,7 @@ sudo pacman -S libxkbcommon-x11 vulkan-icd-loader alsa-lib systemd-libs
 Depoyu klonla ve betiği çalıştır:
 
 ```sh
-git clone https://github.com/Padrosum/PadrosHorRust.git
+git clone https://github.com/Padrosum/plauncher.git
 cd PadrosHorRust
 ./install.sh
 ```
