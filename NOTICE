@@ -1,0 +1,32 @@
+PadrosHorRust
+Copyright (C) 2026 PadrosHorRust contributors
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program (LICENSE). If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+PadrosHorRust is a fork of Horizon (https://github.com/horizon-rust/horizon),
+Copyright (c) 2026 Ludovic Marie and the Horizon contributors, which is licensed
+under the MIT License (see LICENSE-MIT). The upstream code is used and modified
+under the terms of that license, and this fork as a whole is distributed under
+the GNU General Public License version 3 or later.
+
+Changes made in this fork include removing the game engine crates, trimming the
+workspace to the launcher and the crates it needs, removing the sponsor, Discord
+and partner UI, rebranding the launcher, disabling the launcher's self-update,
+and adding the "Game files" and "Set up automatically" flows.
+
+Minecraft is a trademark of Mojang Synergies AB. This repository contains no
+Mojang game files, assets, libraries or jars; it only reads files that the user
+already has on their computer. Nothing in this project grants a license to
+Minecraft or its assets.

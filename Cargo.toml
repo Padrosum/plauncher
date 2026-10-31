@@ -1,0 +1,43 @@
+[workspace]
+exclude = ["launcher"]
+members = [
+    "crates/horizon-core",
+    "crates/horizon-world",
+    "crates/horizon-theme",
+    "crates/horizon-prepare",
+    "crates/horizon-telemetry",
+    "crates/horizon-bench",
+    "crates/horizon-friends",
+    "crates/horizon-mods",
+    "crates/horizon-port-pack",
+    "crates/horizon-shader-api",
+    "crates/horizon-release-sign",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "GPL-3.0-or-later"
+rust-version = "1.85"
+
+[workspace.lints.clippy]
+too_many_arguments = "allow"
+type_complexity = "allow"
+needless_range_loop = "allow"
+large_enum_variant = "allow"
+
+# Line tables keep file:line in backtraces; full debug info made every
+# example and test binary hundreds of megabytes and slow to link.
+[profile.dev]
+debug = "line-tables-only"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+
+# Optimized but quick-to-link builds for iteration: cargo build --profile fast
+[profile.fast]
+inherits = "release"
+lto = false
+codegen-units = 16
+incremental = true
